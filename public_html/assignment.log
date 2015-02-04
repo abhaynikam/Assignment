@@ -1,0 +1,29 @@
+webonise-desktop
+root
+Linux webonise-desktop 3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.1 LTS"
+NAME="Ubuntu"
+VERSION="14.04.1 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.1 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+/root
+ 14:45:40 up  1:55,  3 users,  load average: 0.00, 0.03, 0.09
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+webonise :0       :0               13:59   ?xdm?   4:38   0.13s init --user
+webonise pts/1    :0               14:01   13:16   0.10s  2.16s /usr/bin/python /usr/bin/x-terminal-emulator
+webonise pts/6    :0               14:14    4.00s  4.77s  3.44s /usr/bin/python /usr/bin/x-terminal-emulator
+root
+uid=0(root) gid=0(root) groups=0(root)
+x1_x1.txt
+x2_x2.txt
+x3_x3.txt
+x4_x4.txt
+x5_x5.txt
