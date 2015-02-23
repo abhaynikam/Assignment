@@ -1,0 +1,12 @@
+.form_1{
+	padding-top: 10px;
+}
+
+.constant{
+	display: block;			
+}
+canvas{
+	height: 500px;
+	width: 800px;
+	border-style: dashed;	
+}
