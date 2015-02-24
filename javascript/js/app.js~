@@ -1,0 +1,13 @@
+
+	
+$(document).ready(function () {
+	$("#draw").click(function () {
+		createObject("mycanvas");
+	});
+});
+
+$(document).ready(function () {
+	$("#parse").click(function () {
+		parse("equ");
+	});
+});
