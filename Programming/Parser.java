@@ -120,34 +120,34 @@ public class Parser {
     	Scanner in = new Scanner(System.in);
     	try{
     		System.out.println("File to parse:");
-			file = in.next();
-			String data = readFile(file);
-			Pattern p = Pattern.compile("main");
-			Pattern p1 = Pattern.compile("function");
-			//Pattern p2 = Pattern.compile("[^public]\\s*(String|int|Long|float)\\s*(\\w*)");
+		file = in.next();
+		String data = readFile(file);
+		Pattern p = Pattern.compile("main");
+		Pattern p1 = Pattern.compile("function");
+		//Pattern p2 = Pattern.compile("[^public]\\s*(String|int|Long|float)\\s*(\\w*)");
 			
-			Matcher m = p.matcher(data);
-			Matcher m1 = p1.matcher(data);
-			//Matcher m2 = p2.matcher(data);
-			if(m.find()){
-				System.out.println("Language:JAVA");
-				parseJavaFile(file);
-			}	
+		Matcher m = p.matcher(data);
+		Matcher m1 = p1.matcher(data);
+		//Matcher m2 = p2.matcher(data);
+		if(m.find()){
+			System.out.println("Language:JAVA");
+			parseJavaFile(file);
+		}	
 			
-			else if(m1.find()){
-				System.out.println("Language:PHP");
-				parsePHPFile(file);
-			}
-			else{
-				System.out.println("Language:RUBY");
-				parseRubyFile(file);
-			}
-			
-			
-			
-		}catch(Exception e){
-			e.printStackTrace();
+		else if(m1.find()){
+			System.out.println("Language:PHP");
+			parsePHPFile(file);
 		}
+		else{
+			System.out.println("Language:RUBY");
+			parseRubyFile(file);
+		}
+			
+			
+			
+	}catch(Exception e){
+		e.printStackTrace();
+	}
     	
     }
        
