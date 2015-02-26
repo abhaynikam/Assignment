@@ -50,25 +50,25 @@ function parse(equation) {
 			
 			identifyConstants(a,b,c);	
 		}		
-	}
-	function createObject(id) {
+}
+function createObject(id) {
 		alert("inside create");
 		q = Object.create(line);
-		q.p = parseInt(document.form2.const_a.value);
-		q.q = parseInt(document.form2.const_b.value);
-		q.r = parseInt(document.form2.const_c.value);
-		q.s = parseInt(document.form2.range.value);
-		q.t = parseInt(document.form2.step.value);
+		q.con_a = parseInt(document.form2.const_a.value);
+		q.con_b = parseInt(document.form2.const_b.value);
+		q.con_c = parseInt(document.form2.const_c.value);
+		q.con_r = parseInt(document.form2.range.value);
+		q.con_s = parseInt(document.form2.step.value);
 		
 		q.drawLine(id);
-	}
+}
 
 var line = {
-	p : 0,
-	q : 0,
-	r : 0,
-	s : 0,
-	t : 0,
+	con_a : 0,
+	con_b : 0,
+	con_c : 0,
+	con_r : 0,
+	con_s : 0,
 	drawLine : function (canvasNm) {
 		var canvas = document.getElementById(canvasNm);
 		if (canvas.getContext) {
@@ -76,19 +76,19 @@ var line = {
 			var ctx = canvas.getContext("2d");
 		}
 		var i;
-		console.log(this.p);
+		console.log(this.con_a);
 		ctx.beginPath();
 		ctx.translate(canvas.width / 2, canvas.height / 2);
-		for (i=0; i<this.s; i+=this.t) {
-			ctx.lineTo(linearEquation(this.p,this.q,this.r,i),i);
+		for (i=0; i<this.con_r; i+=this.con_s) {
+			ctx.lineTo(linearEquation(this.con_a,this.con_b,this.con_c,i),i);
 			ctx.stroke();
-			ctx.moveTo(linearEquation(this.p,this.q,this.r,i),i);
+			ctx.moveTo(linearEquation(this.con_a,this.con_b,this.con_c,i),i);
 		}
-		if (i>this.s) {
-			i=this.s;
-			ctx.lineTo(linearEquation(this.p,this.q,this.r,i),i);
+		if (i>this.con_r) {
+			i=this.con_r;
+			ctx.lineTo(linearEquation(this.con_a,this.con_b,this.con_c,i),i);
 			ctx.stroke();
-			ctx.moveTo(linearEquation(this.p,this.q,this.r,i),i);
+			ctx.moveTo(linearEquation(this.con_a,this.con_b,this.con_c,i),i);
 		}
 	}
 				
