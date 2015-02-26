@@ -1,0 +1,37 @@
+<html>
+	<title>HTML Assignment 1</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>	
+	</head>
+	<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Banner</h1>		
+		</div>
+		<div id="nav_menu">
+			<nav>
+				<a href="#" >Home</a>
+				<a href="#" >About us</a>
+				<a href="#" >Contacts</a>
+			</nav>			
+		</div>
+		<div id="container">
+			<div id="image">
+				<img src="image/Windows-8-Logo.png" alt="Windows-8-Logo" >		
+			</div>
+			<div id="content">
+				<p>Windows 8 introduced major changes to the operating system's platform and user interface to improve its user experience on tablets, where Windows was now competing with mobile operating systems, including Android and iOS.[8] In particular, these changes included a touch-optimized Windows shell based on Microsoft's "Metro" design language, the Start screen (which displays programs and dynamically updated content on a grid of tiles), a new platform for developing apps with an emphasis on touchscreen input, integration with online services (including the ability to sync apps and settings between devices), and Windows Store, an online store for downloading and purchasing new software. Windows 8 added support for USB 3.0, Advanced Format hard drives, near field communications, and cloud computing. Additional security features were introduced, such as built-in antivirus software, integration with Microsoft SmartScreen phishing filtering service and support for UEFI Secure Boot on supported devices with UEFI firmware, to prevent malware from infecting the boot process.</p>
+				<p>Windows 8 was released to a mixed reception. Although reaction towards its performance improvements, security enhancements, and improved support for touchscreen devices was positive, the new user interface of the operating system was widely criticized for being potentially confusing and difficult to learn (especially when used with a keyboard and mouse instead of a touchscreen). Despite these shortcomings, 60 million Windows 8 licenses have been sold through January 2013, a number which included both upgrades and sales to OEMs for new PCs.[9]</p>
+			</div>
+		</div>
+		<div id="footer">
+			<nav>
+				<a href="#" >Home</a>
+				<a href="#" >About us</a>
+				<a href="#" >Contacts</a>
+			</nav>
+			<p>@Copyright Webonise Lab Inc</p>
+		</div>
+	</div>				
+	</body>
+</html>
