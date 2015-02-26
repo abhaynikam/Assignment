@@ -100,7 +100,7 @@ select max(if(q.question = question,r.answered,NULL)) as question from questions
 
 select group_concat(distinct concat('if(q.question = ''',question,''',r.answered,NULL) as question')) into @sql from questions q, result r, assessment_questions aq where r.assessment_question_id = aq.id and aq.question_id = q.id;
 
-set @sql = concat ('select r.user_id ,',@sql, ' from questions q, result r, assessment_questions aq where r.assessment_question_id = aq.id and aq.question_id = q.id');Query OK, 0 rows affected (0.00 sec)
+set @sql = concat ('select r.user_id ,',@sql, ' from questions q, result r, assessment_questions aq where r.assessment_question_id = aq.id and aq.question_id = q.id');
 
 prepare stmt from @sql;
 execute stmt;
